@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <header class="nav-row">
+        <nav class="main-container main-nav">
+            <span>Grzegorz Świtalski</span>
+            <ul>
+                <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+                <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-row">
+        <div class="main-container">
+
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+    <footer class="footer-row">
+        <div class="main-container">
+
+            Stopka
+        </div>
+    </footer>
+</div>
+
