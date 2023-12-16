@@ -1,0 +1,33 @@
+.home-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .home-content {
+        width: 100%;
+        padding-top: 4rem;
+
+        .intro-card {
+            border: 1px solid #666;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            padding: 16px;
+
+            h2 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+
+            p {
+                color: #aaa;
+            }
+        }
+    }
+
+    .home-aside {
+        width: 200px;
+    }
+}

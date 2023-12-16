@@ -1,4 +1,11 @@
-<div *ngFor="let article of latestArticles">
-    <h2>{{article.title}}</h2>
-    <p>{{article.intro}}</p>
+<div class="home-wrapper">
+    <div class="home-content">
+        <div class="intro-card" *ngFor="let article of latestArticles">
+            <h2>{{article.title}}</h2>
+            <p>{{article.intro}}</p>
+        </div>
+    </div>
+    <div class="home-aside">
+
+    </div>
 </div>
