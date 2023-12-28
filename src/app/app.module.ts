@@ -14,10 +14,12 @@ import 'prismjs';
 import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
+import { OpenQuestionsComponent } from './pages/open-questions/open-questions.component';
 
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 @NgModule({
-    declarations: [AppComponent, ArticleComponent],
+    declarations: [AppComponent, ArticleComponent, OpenQuestionsComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -25,6 +27,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
         DefaultLayoutModule,
         HttpClientModule,
         MarkdownModule.forRoot(),
+        AccordionModule.forRoot(),
     ],
     providers: [],
     bootstrap: [AppComponent],

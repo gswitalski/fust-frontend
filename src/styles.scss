@@ -6,21 +6,13 @@
 
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap');
-
-
-
-// @import "node_modules/prismjs/themes/prism.css";
-
 
 @import 'prismjs/themes/prism-okaidia.css';
 @import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 @import 'prismjs/plugins/line-highlight/prism-line-highlight.css';
 
-* {
+p, h1, h2, h3, h4, button, div {
     color: aliceblue;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -72,5 +64,58 @@ nav.main-nav {
         p {
             margin-bottom: 0;
         }
+    }
+}
+
+markdown {
+    h1.fust-title {
+        margin: 32px 0 64px 0;
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    p, li, ul, ol, blockquote, pre, code, .fust-article {
+        font-size: 1rem;
+        color: #ccc;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        color: #ccc;
+    }
+
+    li, ul {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+accordion-group {
+    margin: 32px 0 32px 0;
+    color: #ccc;
+    font-family: 'Noto Sans', sans-serif;
+
+
+    .panel {
+        background-color: hsl(212, 32%, 8%);
+        color: #617bff;
+        font-size: 0.8rem;
+    }
+
+    div.panel-default {
+        border: #777 1px solid;
+    }
+
+    .panel-collapse {
+        border-top: #777 1px solid;
+    }
+
+    button {
+        text-decoration: none !important;
+        color: inherit !important;
+        font-size: 1.2rem !important;
+        font-weight: 800 !important;
     }
 }

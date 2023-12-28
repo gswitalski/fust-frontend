@@ -1,0 +1,22 @@
+<aside>
+    <h1>Kategorie</h1>
+    <ul>
+        <li *ngFor="let category of categories"
+            [class.active]="category.id === categoryId"
+        >
+            <a [routerLink]="['/open-questions', category.id]">
+                {{category.value}}
+            </a>
+        </li>
+    </ul>
+</aside>
+<main>
+    <accordion [isAnimated]="true" [closeOthers]="true">
+        <accordion-group *ngFor="let question of questions"
+            [heading]="question.question">
+            <markdown>
+                {{question.answer}}
+            </markdown>
+        </accordion-group>
+    </accordion>
+</main>

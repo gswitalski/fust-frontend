@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ArticleCard } from 'src/app/model/article-card.model';
 import { ArticlesService } from 'src/app/service/articles.service';
 
@@ -8,7 +9,10 @@ import { ArticlesService } from 'src/app/service/articles.service';
     styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-    constructor(private articlesService: ArticlesService) {}
+    constructor(
+        private articlesService: ArticlesService,
+        private route: ActivatedRoute
+    ) {}
 
     latestArticles: ArticleCard[] = [];
 
